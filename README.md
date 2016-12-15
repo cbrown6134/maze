@@ -1,4 +1,5 @@
-# maze
+Maziest Mazier Maze Maze
 
-This is the starter code for the Maze project. Have fun!
+Instructions
 
+All you have to do is collect all the coins and make it to the end of the maze in the given time.
