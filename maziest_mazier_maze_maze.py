@@ -32,6 +32,7 @@ MY_FONT = pygame.font.Font(None, 50)
 
 #Images
 img = pygame.image.load('splashscreen4.png')
+img2 = pygame.image.load('Untitled.png')
 
 #stages
 START = 0
@@ -39,7 +40,7 @@ PLAYING = 1
 END = 2
 
 # Make a player
-player =  [530, 0, 25, 25]
+player = [530, 0, 25, 25] 
 player_vx = 0
 player_vy = 0
 player_speed = 5
@@ -238,7 +239,7 @@ def setup():
     
     goal = [750, 930, 100, 20]
     
-    player =  [530, 0, 25, 25]
+    player = [530, 0, 25, 25] 
     player_vx = 0
     player_vy = 0
     player_speed = 5
@@ -399,7 +400,7 @@ while not done:
 
     pygame.draw.rect(screen, GRAY, gray_switch)
 
-    pygame.draw.rect(screen, RED, player)
+    screen.blit(img2, (player[0], player[1]))
 
     if not doors_open:
         for d in black_doors:
