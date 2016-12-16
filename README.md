@@ -1,5 +1,5 @@
-Maziest Mazier Maze Maze
+#Maziest Mazier Maze Maze
 
-Instructions
+##Instructions
 
-All you have to do is collect all the coins and make it to the end of the maze in the given time.
+All you have to do is collect all the coins and make it to the end of the maze in the given amount of time.

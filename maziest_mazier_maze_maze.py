@@ -31,8 +31,9 @@ GRAY = (198, 175, 192)
 MY_FONT = pygame.font.Font(None, 50)
 
 #Images
-img = pygame.image.load('splashscreen4.png')
-img2 = pygame.image.load('Untitled.png')
+img = pygame.image.load('img/splashscreen4.png')
+img2 = pygame.image.load('img/Untitled.png')
+img3 = pygame.image.load('img/coin.png') 
 
 #stages
 START = 0
@@ -217,7 +218,7 @@ def setup():
     
     right = player[0] + player[2]
 
-    time_remaining = 90
+    time_remaining = 95
     
     ticks = 0
 
@@ -410,7 +411,7 @@ while not done:
         pygame.draw.rect(screen, BLUE, w)
     
     for c in coins:
-        pygame.draw.rect(screen, WHITE, c)
+        screen.blit(img3, (c[0], c[1]))
 
     pygame.draw.rect(screen, black_switch_color, black_switch)
     
